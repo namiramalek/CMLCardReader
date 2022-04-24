@@ -7,7 +7,7 @@ from functools import reduce
 app = Chalice(app_name='Capabilities')
 app.debug = True
 
-storage_location = 'contentcen301117493.aws.ai'
+storage_location = 'S3Bucket'
 storage_service = storage_service.StorageService(storage_location)
 textract_service = textract_service.TextractService(storage_service)
 extraction_service = extraction_service.ExtractionService()
